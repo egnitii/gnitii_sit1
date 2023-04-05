@@ -2,16 +2,8 @@
 using namespace std;
 
 int fib(int n){ 
-    int a, b, sum, count; 
-    a = count = sum = 0; 
-    b = 1; 
-    while (count < n) { 
-        sum = a + b; 
-        a = b; 
-        b = sum; 
-        count++; 
-    } 
-    return a; 
+     if ( n == 1 || n == 2) return (n -1);  
+    return fib(n-1) + fib(n-2);  
 }
 
 int main(){

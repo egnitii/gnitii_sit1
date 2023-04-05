@@ -10,5 +10,7 @@ int main(){
 	cout << "Hello, World!" << endl;
 	int n;
 	cout << "n="; cin >> n;
-	cout << fib(n);
+	for (int i = 1; i <= n; i++){
+        cout << fib(i) << endl;
+}
 }
